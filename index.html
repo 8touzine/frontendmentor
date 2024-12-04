@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: rgb(250, 247, 234);
+    }
+    .containter{
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      
+      
+
+    }
+    
+    
+    @media only screen and (min-width: 720px){
+      
+      .product{
+        overflow: hidden;
+        border-radius: 11px;
+        background-color: rgba(255,255,255,1);
+        width: 55vw;
+        max-width: 550px;
+        height: 45vw;
+        max-height: 550px;
+        
+        
+      }
+      .pic{
+        width: 50%;
+        height: 100%;
+        float: left;
+      }
+      .textCont{
+        width: 50%;
+        height: 100%;
+        float: right;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1{
+        font-family: monospace;
+        font-size: small;
+        margin: auto;
+        padding: 5%;
+        text-align: center;
+        border: 5%;
+        padding-left: 15%;
+        flex-grow: 1 !important;
+      }
+      h2{
+        
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+        font-size: 115%;
+        flex-grow: 4 !important;
+      }
+      p{
+        font-size: 85%;
+        flex-grow: 4 !important;
+      }
+      .prix{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+        color: darkgreen;
+        font-size: 100%;
+      }
+      .pasprix{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+        color: rgb(109, 109, 109);
+        font-size: 75%;
+        text-decoration: line-through;
+        
+      }
+      .buttons{
+        padding: 5px;
+        margin: auto;
+        border-radius: 5px;
+        background-color: rgb(49, 172, 131);
+        color: aliceblue;
+        width: 11vw;
+        height: 3vh;
+        max-height: 3vh;
+        text-align: center;
+        float:right;
+        flex-grow: 4 !important;
+        
+      }
+    }
+    @media only screen and (max-width: 720px){
+      .product{
+        overflow: hidden;
+        
+        border-radius: 15px;
+        background-color: rgba(255,255,255,1);
+        width: 340px;
+        max-width: 340px;
+        height: 590px;
+       
+        
+        
+      }
+      .textCont{
+        width: 100%;
+        height: 100%;
+        float: bottom;
+        padding: 15px;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        min-width: 0;
+        
+        
+      }
+      .pic{
+        width: 100%;
+        height: 41%;
+        float: top;
+      }
+      h1{
+        font-family: monospace;
+        font-size: small;
+        padding: 5%;
+        text-align: center;
+        border: 5%;
+        padding-left: 15%;
+        flex-grow: 1;
+        padding: 5px;
+      }
+      h2{
+        
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 115%;
+        flex-grow: 1;
+        padding: 15px;
+      }
+      p{
+        font-size: 85%;
+        flex-grow: 4;
+        padding: 5px;
+      }
+      .prix{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+        color: darkgreen;
+        font-size: 100%;
+        padding: 5px;
+      }
+      .pasprix{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+        color: rgb(109, 109, 109);
+        font-size: 75%;
+        text-decoration: line-through;
+        padding: 5px;
+        
+      }
+      
+      .buttons{        
+        padding: 5px;
+      min-width: 0;
+        margin: auto;
+        border-radius: 5px;
+        background-color: rgb(49, 172, 131);
+        color: aliceblue;
+        width: 80%;
+        height: 3vh;
+        max-height: 3vh;
+        text-align: center;
+        flex-grow: 4;
+        
+       
+        
+        
+      }
+
+    }
+    
+  </style>
+ 
+</head>
+<body>
+  <div class="containter">
+    <div></div>
+    <div class="product">
+      <div class="pic"><img height="100%" width="100%" src="images/image-product-desktop.jpg"></div>
+      <div class="textCont">
+      <h1 >Perfume</h1>
+
+      <h2 >Gabrielle Essence Eau De Parfum</h2>
+    
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.
+    </p>
+      <div style="flex-grow: 1" ><span class="prix">$149.99</span>
+        <span class="pasprix">$169.99</span></div>
+      
+    <div class="buttons">
+      Add to Cart
+    </div>
+    <div style="flex-grow: 1" ></div>
+  </div>
+    </div>
+    
+ 
+  </div> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sami</a>.
+  </div>
+</body>
+</html>
